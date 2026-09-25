@@ -1,0 +1,60 @@
+[
+  {
+    "arguments": [
+      "/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m3",
+      "-mthumb",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32F103xB",
+      "-ICore/Inc",
+      "-IDrivers/STM32F1xx_HAL_Driver/Inc",
+      "-IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy",
+      "-IDrivers/CMSIS/Device/ST/STM32F1xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-I./ST7789-STM32/ST7789",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/main.lst",
+      "-o",
+      "build/main.o",
+      "Core/Src/main.c"
+    ],
+    "directory": "/home/niviid99/projects/st7789_stm32f103c8t6",
+    "file": "/home/niviid99/projects/st7789_stm32f103c8t6/Core/Src/main.c",
+    "output": "/home/niviid99/projects/st7789_stm32f103c8t6/build/main.o"
+  },
+  {
+    "arguments": [
+      "/opt/arm-gnu-toolchain-14.3.rel1-x86_64-arm-none-eabi/bin/arm-none-eabi-gcc",
+      "-c",
+      "-mcpu=cortex-m3",
+      "-mthumb",
+      "-DUSE_HAL_DRIVER",
+      "-DSTM32F103xB",
+      "-ICore/Inc",
+      "-IDrivers/STM32F1xx_HAL_Driver/Inc",
+      "-IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy",
+      "-IDrivers/CMSIS/Device/ST/STM32F1xx/Include",
+      "-IDrivers/CMSIS/Include",
+      "-I./ST7789-STM32/ST7789",
+      "-Og",
+      "-Wall",
+      "-fdata-sections",
+      "-ffunction-sections",
+      "-g",
+      "-gdwarf-2",
+      "-Wa,-a,-ad,-alms=build/st7789.lst",
+      "-o",
+      "build/st7789.o",
+      "./ST7789-STM32/ST7789/st7789.c"
+    ],
+    "directory": "/home/niviid99/projects/st7789_stm32f103c8t6",
+    "file": "/home/niviid99/projects/st7789_stm32f103c8t6/ST7789-STM32/ST7789/st7789.c",
+    "output": "/home/niviid99/projects/st7789_stm32f103c8t6/build/st7789.o"
+  }
+]

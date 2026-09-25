@@ -1,0 +1,48 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "STM32F103 (OpenOCD)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "serverpath": "/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.openocd.linux64_2.4.200.202505051030/tools/bin/openocd",
+            "searchDir": [
+                 "/usr/share/openocd/scripts"
+            ],
+            "executable": "${workspaceFolder}/build/st7789_stm32f103c8t6.elf",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f1x.cfg"
+            ],
+            "runToEntryPoint": "main",
+            "svdFile": "${workspaceFolder}/STM32F103.svd",
+            "loadFiles": [],
+            "showDevDebugOutput": "raw",
+            "openOCDLaunchCommands": [
+                "adapter speed 4000"
+            ]
+        },
+         {
+            "name": "STM32F407 (OpenOCD)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "serverpath": "/opt/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.ide.mcu.externaltools.openocd.linux64_2.4.200.202505051030/tools/bin/openocd",
+            "searchDir": [
+                 "/usr/share/openocd/scripts"
+            ],
+            "executable": "${workspaceFolder}/build/bpt.elf",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "svdFile": "${workspaceFolder}/STM32F407.svd",
+            "loadFiles": [],
+            "showDevDebugOutput": "raw",
+            "openOCDLaunchCommands": [
+                "adapter speed 4000"
+            ]
+        }
+    ]
+}
